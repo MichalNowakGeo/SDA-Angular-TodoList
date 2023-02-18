@@ -1,0 +1,18 @@
+<div>
+  <mat-card>
+    <mat-card-content>
+      <mat-checkbox [checked]="todo.completed" (change)="onChange($event)">
+        &nbsp;
+      </mat-checkbox>
+      <span class="spacer" [ngClass]="setClass()">
+        {{ todo.title }}
+      </span>
+
+      <span class="spacer">
+        <button mat-mini-fab color="warn" (click)="onDelete($event)">
+          <mat-icon fontIcon="delete" color="accent"></mat-icon>
+        </button>
+      </span>
+    </mat-card-content>
+  </mat-card>
+</div>

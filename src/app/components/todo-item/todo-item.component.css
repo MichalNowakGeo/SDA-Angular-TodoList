@@ -1,0 +1,12 @@
+.todo-item-card {
+  margin: 5px;
+}
+
+.is-completed {
+  text-decoration: line-through;
+}
+
+.spacer {
+  margin-right: 5px;
+  margin-left: 5px;
+}
