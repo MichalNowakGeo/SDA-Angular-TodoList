@@ -1,8 +1,11 @@
 <div>
-  <app-todo-item
-    *ngFor="let todoItem of todos"
-    [todo]="todoItem"
-    (change)="onTodoChange($event)"
-    (delete)="onTodoDelete($event)"
-  ></app-todo-item>
+    <app-add-todo
+        (submit)="onTodoCreate($event)"
+    ></app-add-todo>
+    <app-todo-item
+        *ngFor="let todoItem of todos"
+        [todo]="todoItem"
+        (change)="onTodoChange($event)"
+        (delete)="onTodoDelete($event)"
+    ></app-todo-item>
 </div>
